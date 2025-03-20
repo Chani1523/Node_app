@@ -5,6 +5,9 @@ const port = process.env.PORT || 3000;
 
 // API Key של Render
 const renderApiKey = 'rnd_eDTngY6SPS53Yecwtn460poe62Sb';  // החלף בזה את ה-API Key שלך
+app.get('/', (req, res) => {
+    res.send('Hello World!');  // או כל תוכן אחר שתרצי
+});
 
 app.get('/apps', async (req, res) => {
     try {
